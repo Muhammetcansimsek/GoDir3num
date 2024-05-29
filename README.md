@@ -55,7 +55,7 @@ go build -o webfuzzer
 Programı çalıştırmak için aşağıdaki komutu kullanın:
 
 ```sh
-./webfuzzer -url http://hedef-site.com -wordlist wordlist.txt -threads 150
+./webfuzzer -url "http://hedef-site.com" -wordlist wordlist.txt -threads 150
 ```
 
 ### Komut Satırı Seçenekleri
@@ -68,7 +68,7 @@ Programı çalıştırmak için aşağıdaki komutu kullanın:
 ### 4. Örnek Kullanım
 
 ```sh
-./webfuzzer -url http://example.com -wordlist common.txt -threads 100 -verbose true
+./webfuzzer -url "http://example.com" -wordlist common.txt -threads 100 -verbose true
 ```
 
 ## Geliştirme
@@ -78,7 +78,7 @@ Proje üzerinde çalışırken kullanışlı olabilecek bazı komutlar:
 ### Kodları Derlemeden Çalıştırmak
 
 ```sh
-go run main.go result.go -url http://example.com -wordlist common.txt -threads 100
+go run main.go result.go -url "http://example.com" -wordlist common.txt -threads 100
 ```
 
 ## Katkıda Bulunma
